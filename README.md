@@ -4,7 +4,9 @@
 
 ## Docs
 
-[document](http://172.16.10.209/tiji-front-platform/tiji-front-components/blob/develop/docs/index.html)
+**新增了组件本地md预览，配合service worker(模拟接口)实现业务业务组件，具体请本地运行查看效果**
+
+**使用文档在docs文件夹中，可以本地运行或指定服务器目录查看**
 
 ## install 安装
 
