@@ -1,0 +1,19 @@
+.jsmap {
+  .map-type {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 500;
+  }
+  .mapBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 500;
+  }
+  .cesium-list-switcher {
+    a {
+      color: rgb(255, 255, 255) !important;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@mixin clear-fix {
+  zoom: 1;
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+  }
+}
+
+@mixin make-row($gutter: 0) {
+  position: relative;
+  margin-left: ($gutter / -2);
+  margin-right: ($gutter / -2);
+  height: auto;
+  @include clear-fix;
+}
+
+@mixin make-grid($class:'') {
+  @include float-grid-columns($class);
+  @include loop-grid-columns($class);
+}
+
+$grid-columns: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24;
+
+@mixin float-grid-columns($class) {
+  @each $row in $grid-columns {
+    .el-col-span#{class}-#{$row} {
+      float: left;
+      flex: 0 0 auto;
+    }
+  }
+}
+
+@mixin loop-grid-columns($class) {
+  @each $index in $grid-columns {
+    .el-col-span#{$class}-#{$index} {
+      display: block;
+      width: percentage((index / 24));
+    }
+    .el-col#{$class}-push-#{$index} {
+      left: percentage((index / 24));
+    }
+    .el-col#{$class}-pull-#{$index} {
+      right: percentage((index / 24));
+    }
+    .el-col#{$class}-offset-#{$index} {
+      margin-left: percentage((index / 24));
+    }
+    .el-col#{$class}-order-#{$index} {
+      order: index;
+    }
+  }
+  .el-col-span#{$class}-0 {
+    display: none;
+  }
+  .el-col#{$class}-push-0 {
+    left: auto;
+  }
+  .el-col#{$class}-pull-0 {
+    right: auto;
+  }
+  .el-col#{$class}-offset-0 {
+    margin-left: 0
+  }
+  .el-col#{$class}-order-0 {
+    order: 0;
+  }
+}

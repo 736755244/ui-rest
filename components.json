@@ -1,0 +1,11 @@
+{
+  "anchor": "./packages/anchor/index.js",
+  "anchor-link": "./packages/anchor-link/index.js",
+  "icon-font": "./packages/icon-font/index.js",
+  "title": "./packages/title/index.js",
+  "jsmap": "./packages/jsmap/index.js",
+  "target": "./packages/target/index.js",
+  "search": "./packages/search/index.js",
+  "icon-library": "./packages/icon-library/index.js",
+  "import-export": "./packages/import-export/index.js"
+}

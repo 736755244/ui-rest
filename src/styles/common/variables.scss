@@ -1,0 +1,99 @@
+@use "sass:math";
+
+$font-path: 'fonts' !default;
+
+/* Color
+-------------------------- */
+$color-white: #FFFFFF !default;
+$color-white-light: rgba(255, 255, 255, 0.65) !default;
+$color-white-light2: rgba(255, 255, 255, 0.35) !default;
+
+$color-primary : #1089ff !default;
+$color-primary-light1: mix(#FFFFFF, $color-primary, 20%) !default;
+$color-primary-light2: mix(#FFFFFF, $color-primary, 40%) !default;
+$color-primary-light3: mix(#FFFFFF, $color-primary, 60%) !default;
+$color-primary-light4: mix(#FFFFFF, $color-primary, 80%) !default;
+$color-primary-light5: mix(#FFFFFF, $color-primary, 90%) !default;
+$color-primary-light6: mix(#FFFFFF, $color-primary, 95%) !default;
+$color-primary-active: mix(#000000, $color-primary, 10%) !default;
+
+$color-success: #52c41a !default;
+$color-success-light1: mix(#FFFFFF, $color-success, 20%) !default;
+$color-success-light2: mix(#FFFFFF, $color-success, 40%) !default;
+$color-success-light3: mix(#FFFFFF, $color-success, 60%) !default;
+$color-success-light4: mix(#FFFFFF, $color-success, 80%) !default;
+$color-success-light5: mix(#FFFFFF, $color-success, 90%) !default;
+$color-success-light6: mix(#FFFFFF, $color-success, 95%) !default;
+$color-success-active: mix(#000000, $color-success, 10%) !default;
+
+$color-info: #35495E !default;
+$color-info-light1: mix(#FFFFFF, $color-info, 20%) !default;
+$color-info-light2: mix(#FFFFFF, $color-info, 40%) !default;
+$color-info-light3: mix(#FFFFFF, $color-info, 60%) !default;
+$color-info-light4: mix(#FFFFFF, $color-info, 80%) !default;
+$color-info-light5: mix(#FFFFFF, $color-info, 90%) !default;
+$color-info-light6: mix(#FFFFFF, $color-info, 95%) !default;
+$color-info-active: mix(#000000, $color-info, 10%) !default;
+
+$color-warning: #fea638 !default;
+$color-warning-light1: mix(#FFFFFF, $color-warning, 20%) !default;
+$color-warning-light2: mix(#FFFFFF, $color-warning, 40%) !default;
+$color-warning-light3: mix(#FFFFFF, $color-warning, 60%) !default;
+$color-warning-light4: mix(#FFFFFF, $color-warning, 80%) !default;
+$color-warning-light5: mix(#FFFFFF, $color-warning, 90%) !default;
+$color-warning-light6: mix(#FFFFFF, $color-warning, 95%) !default;
+$color-warning-active: mix(#000000, $color-warning, 10%) !default;
+
+$color-danger: #ff4d4f !default;
+$color-danger-light1: mix(#FFFFFF, $color-danger, 20%) !default;
+$color-danger-light2: mix(#FFFFFF, $color-danger, 40%) !default;
+$color-danger-light3: mix(#FFFFFF, $color-danger, 60%) !default;
+$color-danger-light4: mix(#FFFFFF, $color-danger, 80%) !default;
+$color-danger-light5: mix(#FFFFFF, $color-danger, 90%) !default;
+$color-danger-light6: mix(#FFFFFF, $color-danger, 95%) !default;
+$color-danger-active: mix(#000000, $color-danger, 10%) !default;
+
+/* text-color
+-------------------------- */
+$color-text-primary: rgba(0, 0, 0, .85) !default;
+$color-text-default: rgba(0, 0, 0, .65) !default;
+$color-text-secondary: rgba(0, 0, 0, .45) !default;
+$color-text-disabled: rgba(0, 0, 0, .25) !default;
+$color-text-placeholder: #C0C4CC !default;
+$color-text-regular: inherit !default;
+$btn-disable-color: #c5c8ce !default;
+
+/* bg-color
+-------------------------- */
+$color-bg-fa: #fafafa !default;
+$color-select-hover: #f5f5f5 !default;
+$color-effect-shadow: rgba($color-primary, 0.08) !default;
+$color-input-shadow: rgba($color-primary, 0.2) !default;
+$color-input-error-shadow: rgba($color-danger, 0.2) !default;
+
+/* border
+-------------------------- */
+$border-color-base: #d9d9d9 !default;
+$border-color-light: #f0f0f0 !default;
+$border-base: 1px solid $border-color-base !default;
+$border-base-light: 1px solid $border-color-light !default;
+$border-table: 1px solid #e8eaec !default;
+$border-table-color: #e8eaec !default;
+
+/* radius font-size
+-------------------------- */
+$border-base-radius: 2px !default;
+$base-font-size: 14px !default;
+$header-font-size: 16px !default;
+
+/* height
+-------------------------- */
+$large-height: 36px !default;
+$default-height: 32px !default;
+$small-height: 28px !default;
+$mini-height: 24px !default;
+$base-line-height: 1.5715 !default;
+
+$animation-duration-slow: 0.3s !default;
+$animation-duration-base: 0.2s !default;
+$animation-duration-fast: 0.1s !default;

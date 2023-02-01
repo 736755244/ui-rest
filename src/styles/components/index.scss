@@ -1,0 +1,18 @@
+// t
+@import "./affix.scss";
+@import "./anchor.scss";
+@import "./icon.scss";
+// tiji
+@import './target.scss';
+@import './search.scss';
+@import './title.scss';
+@import './jsmap.scss';
+@import './import-export.scss';
+@import './icon-library.scss';
+.developPrint {
+  div .el-table--mini .cell, div .el-table--small .cell, div .el-table__expand-icon {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

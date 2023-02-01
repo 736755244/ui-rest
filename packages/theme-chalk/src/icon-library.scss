@@ -1,0 +1,64 @@
+.icon_library {
+  .buttonList {
+    .buttonBox {
+      display: inline-block;
+    }
+    .buttonImage {
+      position: relative;
+      display: inline-block;
+      width: 61px;
+      height: 61px;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      margin-left: 8px;
+      cursor: pointer;
+      .el-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0px;
+        font-size: 15px;
+        width: 25px;
+        height: 25px;
+        .el-icon-delete {
+          display: block;
+        }
+      }
+    }
+  }
+}
+.icon_library_list {
+  .iconBox {
+    width: 395px;
+    max-height:400px;
+    overflow:auto;
+    .iconList {
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      .icon {
+        position: relative;
+        width: 55px;
+        height: 55px;
+        box-sizing: border-box;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border: 1px solid #ddd;
+        margin-bottom: -1px;
+        margin-right: -1px;
+        cursor: pointer;
+        .image {
+          width: 55px;
+          height: 55px;
+          padding: 1px;
+        }
+        .chooseImage {
+          position: absolute; 
+          top: 0;
+          right: 0;
+          padding: 0px;
+        }
+      }
+    }
+  }
+}

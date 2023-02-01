@@ -1,0 +1,13 @@
+.tiji-title {
+  padding: 20px 30px;
+  border-bottom: 1px solid #e4e4e4;
+  .title {
+    color: #434343;
+    font-size: 36px;
+    margin: 0;
+  }
+}
+
+.icon-list .buttonList .el-button [class^=el-icon-] {
+  display: inline-block !important;
+}
